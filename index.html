@@ -314,6 +314,13 @@
     .modal .body li::before { content: "✕"; color: var(--brand); font-weight: 800; }
     .modal .btn { width: 100%; }
 
+    /* ===== Modal de lead ===== */
+    .lead-modal .body p { margin-bottom: 16px; }
+    .lead-modal .lead-form { grid-template-columns: 1fr; max-width: none; box-shadow: none; border: 0; padding: 0; background: transparent; }
+    .lead-modal .close { position: absolute; top: 12px; right: 14px; width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.18); color: #fff; font-size: 20px; line-height: 1; display: grid; place-items: center; }
+    .lead-modal .head { position: relative; }
+    .lead-modal .form-note { margin-top: 12px; }
+
     /* ===== Cookie banner ===== */
     .cookie { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 70; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; box-shadow: var(--shadow); display: none; align-items: center; justify-content: space-between; gap: 16px; font-size: .85rem; color: var(--ink-2); max-width: 760px; margin-inline: auto; }
     .cookie.show { display: flex; }
@@ -375,15 +382,15 @@
         <h1>Sua fórmula manipulada com <span class="accent">orçamento em minutos</span> pelo WhatsApp</h1>
         <p class="lead">Phitofarma, farmácia de manipulação em São Bernardo do Campo. Envie sua prescrição e nossa equipe farmacêutica responde com valores e prazo direto no seu WhatsApp.</p>
 
-        <form class="lead-form" id="lead-form" novalidate>
-          <input type="text" id="nome" name="nome" autocomplete="given-name" placeholder="Seu nome" aria-label="Seu nome" maxlength="80" />
-          <input type="tel" id="phone" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="Seu WhatsApp com DDD" aria-label="Seu WhatsApp com DDD" />
+        <form class="lead-form js-lead-form" id="lead-form" novalidate>
+          <input type="text" name="nome" autocomplete="given-name" placeholder="Seu nome" aria-label="Seu nome" maxlength="80" />
+          <input type="tel" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="Seu WhatsApp com DDD" aria-label="Seu WhatsApp com DDD" />
           <button type="submit" class="btn btn-wa">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
             Quero meu orçamento
           </button>
         </form>
-        <p class="form-err" id="form-err">Preencha seu nome e um WhatsApp válido com DDD (ex.: 11 99999-9999).</p>
+        <p class="form-err">Preencha seu nome e um WhatsApp válido com DDD (ex.: 11 99999-9999).</p>
         <p class="form-note">Ao enviar, você será direcionado ao WhatsApp da Phitofarma. Sem compromisso. Seus dados são tratados conforme nossa <a href="privacidade.html" style="text-decoration:underline">Política de Privacidade</a>.</p>
 
         <div class="trust-line">
@@ -632,6 +639,30 @@
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
   </a>
 
+  <!-- Modal de lead: todo botão de WhatsApp passa por aqui -->
+  <div class="modal-bg" id="lead-modal" role="dialog" aria-modal="true" aria-labelledby="lead-modal-title">
+    <div class="modal lead-modal">
+      <div class="head">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        <span id="lead-modal-title">Falar no WhatsApp</span>
+        <button type="button" class="close" id="lead-modal-close" aria-label="Fechar">×</button>
+      </div>
+      <div class="body">
+        <p>Informe seu nome e WhatsApp para iniciarmos seu atendimento.</p>
+        <form class="lead-form js-lead-form" novalidate>
+          <input type="text" name="nome" autocomplete="given-name" placeholder="Seu nome" aria-label="Seu nome" maxlength="80" />
+          <input type="tel" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="Seu WhatsApp com DDD" aria-label="Seu WhatsApp com DDD" />
+          <button type="submit" class="btn btn-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            Ir para o WhatsApp
+          </button>
+        </form>
+        <p class="form-err">Preencha seu nome e um WhatsApp válido com DDD (ex.: 11 99999-9999).</p>
+        <p class="form-note">Ao enviar, você será direcionado ao WhatsApp da Phitofarma. Sem compromisso. Seus dados são tratados conforme nossa <a href="privacidade.html" style="text-decoration:underline">Política de Privacidade</a>.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Cookie banner -->
   <div class="cookie" id="cookie">
     <span>Usamos cookies para melhorar sua experiência. Veja a <a href="privacidade.html" style="text-decoration:underline">Política de Privacidade</a>.</span>
@@ -642,42 +673,37 @@
     (function () {
       // ===== CONFIG =====
       var WA_NUMBER = '5511963350979';
-      var WA_MSG = 'Olá! Vim pelo site e quero um orçamento da minha fórmula manipulada.';
       // URL que recebe o lead (webhook n8n, Make, Google Apps Script, etc.). Deixe vazio para só redirecionar ao WhatsApp.
       var LEAD_WEBHOOK = 'https://hub.alveogroup.com.br/api/public/webhook/06de5be707c1f3e3266280b67a447a95';
 
-      function waUrl(extra) {
-        var msg = WA_MSG + (extra ? ' ' + extra : '');
-        return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
-      }
       function track(name) {
         if (window.dataLayer) window.dataLayer.push({ event: name });
         if (typeof gtag === 'function') gtag('event', name);
       }
 
-      // Todos os botões de WhatsApp
+      // Todos os botões de WhatsApp abrem o modal de lead (ninguém vai ao WhatsApp sem nome + telefone)
+      var leadModal = document.getElementById('lead-modal');
+      function openLeadModal() {
+        leadModal.classList.add('open');
+        var first = leadModal.querySelector('input[name=nome]');
+        setTimeout(function () { first && first.focus(); }, 50);
+      }
+      function closeLeadModal() { leadModal.classList.remove('open'); }
       document.querySelectorAll('.js-wa').forEach(function (el) {
-        el.setAttribute('href', waUrl());
-        el.setAttribute('target', '_blank');
-        el.setAttribute('rel', 'noopener');
-        el.addEventListener('click', function () { track('whatsapp_click'); });
+        el.setAttribute('href', '#');
+        el.removeAttribute('target');
+        el.addEventListener('click', function (e) { e.preventDefault(); track('whatsapp_click'); openLeadModal(); });
       });
+      document.getElementById('lead-modal-close').addEventListener('click', closeLeadModal);
+      leadModal.addEventListener('click', function (e) { if (e.target === leadModal) closeLeadModal(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLeadModal(); });
 
-      // Formulário do hero
-      var form = document.getElementById('lead-form');
-      var nome = document.getElementById('nome');
-      var phone = document.getElementById('phone');
-      var err = document.getElementById('form-err');
-      var submitBtn = form.querySelector('button[type=submit]');
-      function clearErr() { err.style.display = 'none'; nome.classList.remove('invalid'); phone.classList.remove('invalid'); }
-      nome.addEventListener('input', clearErr);
-      phone.addEventListener('input', function () {
-        var v = phone.value.replace(/\D/g, '').slice(0, 11);
+      function maskPhone(input) {
+        var v = input.value.replace(/\D/g, '').slice(0, 11);
         if (v.length > 6) v = '(' + v.slice(0, 2) + ') ' + v.slice(2, 7) + '-' + v.slice(7);
         else if (v.length > 2) v = '(' + v.slice(0, 2) + ') ' + v.slice(2);
-        phone.value = v;
-        clearErr();
-      });
+        input.value = v;
+      }
       function saveLead(lead) {
         try { localStorage.setItem('phito_lead', JSON.stringify(lead)); } catch (e) {}
         if (!LEAD_WEBHOOK) return Promise.resolve();
@@ -687,38 +713,48 @@
         }
         return fetch(LEAD_WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body, keepalive: true, mode: 'no-cors' }).catch(function () {});
       }
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var n = nome.value.trim();
-        var digits = phone.value.replace(/\D/g, '');
-        var ok = true;
-        if (n.length < 2) { nome.classList.add('invalid'); ok = false; }
-        if (digits.length < 10) { phone.classList.add('invalid'); ok = false; }
-        if (!ok) { err.style.display = 'block'; (n.length < 2 ? nome : phone).focus(); return; }
 
-        var params = new URLSearchParams(location.search);
-        var lead = {
-          nome: n,
-          whatsapp: '55' + digits,
-          telefone_formatado: phone.value,
-          origem: 'lp-phitofarma',
-          pagina: location.href,
-          utm_source: params.get('utm_source') || '',
-          utm_medium: params.get('utm_medium') || '',
-          utm_campaign: params.get('utm_campaign') || '',
-          utm_term: params.get('utm_term') || '',
-          utm_content: params.get('utm_content') || '',
-          gclid: params.get('gclid') || '',
-          data: new Date().toISOString()
-        };
-        submitBtn.classList.add('loading');
-        track('lead_form_submit');
-        var primeiro = n.split(' ')[0];
-        var msg = 'Olá! Meu nome é ' + n + ' e vim pelo site. Quero um orçamento da minha fórmula manipulada. Meu WhatsApp: ' + phone.value;
-        var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
-        saveLead(lead).then(function () {
-          submitBtn.classList.remove('loading');
-          window.location.href = url;
+      // Um mesmo comportamento para o formulário do hero e o do modal
+      document.querySelectorAll('.js-lead-form').forEach(function (form) {
+        var nome = form.querySelector('input[name=nome]');
+        var phone = form.querySelector('input[name=whatsapp]');
+        var err = form.parentNode.querySelector('.form-err');
+        var submitBtn = form.querySelector('button[type=submit]');
+        function clearErr() { err.style.display = 'none'; nome.classList.remove('invalid'); phone.classList.remove('invalid'); }
+        nome.addEventListener('input', clearErr);
+        phone.addEventListener('input', function () { maskPhone(phone); clearErr(); });
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var n = nome.value.trim();
+          var digits = phone.value.replace(/\D/g, '');
+          var ok = true;
+          if (n.length < 2) { nome.classList.add('invalid'); ok = false; }
+          if (digits.length < 10) { phone.classList.add('invalid'); ok = false; }
+          if (!ok) { err.style.display = 'block'; (n.length < 2 ? nome : phone).focus(); return; }
+
+          var params = new URLSearchParams(location.search);
+          var lead = {
+            nome: n,
+            whatsapp: '55' + digits,
+            telefone_formatado: phone.value,
+            origem: 'lp-phitofarma',
+            pagina: location.href,
+            utm_source: params.get('utm_source') || '',
+            utm_medium: params.get('utm_medium') || '',
+            utm_campaign: params.get('utm_campaign') || '',
+            utm_term: params.get('utm_term') || '',
+            utm_content: params.get('utm_content') || '',
+            gclid: params.get('gclid') || '',
+            data: new Date().toISOString()
+          };
+          submitBtn.classList.add('loading');
+          track('lead_form_submit');
+          var msg = 'Olá! Meu nome é ' + n + ' e vim pelo site. Quero um orçamento da minha fórmula manipulada. Meu WhatsApp: ' + phone.value;
+          var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+          saveLead(lead).then(function () {
+            submitBtn.classList.remove('loading');
+            window.location.href = url;
+          });
         });
       });
 
