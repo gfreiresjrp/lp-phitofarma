@@ -704,14 +704,24 @@
         else if (v.length > 2) v = '(' + v.slice(0, 2) + ') ' + v.slice(2);
         input.value = v;
       }
+      // O hub aceita apenas multipart/form-data ou x-www-form-urlencoded.
+      // Enviar como formulário também evita o preflight CORS (application/json era bloqueado).
       function saveLead(lead) {
         try { localStorage.setItem('phito_lead', JSON.stringify(lead)); } catch (e) {}
         if (!LEAD_WEBHOOK) return Promise.resolve();
-        var body = JSON.stringify(lead);
-        if (navigator.sendBeacon) {
-          try { navigator.sendBeacon(LEAD_WEBHOOK, new Blob([body], { type: 'application/json' })); return Promise.resolve(); } catch (e) {}
-        }
-        return fetch(LEAD_WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body, keepalive: true, mode: 'no-cors' }).catch(function () {});
+        var params = new URLSearchParams();
+        Object.keys(lead).forEach(function (k) { params.append(k, lead[k]); });
+        var enviado = fetch(LEAD_WEBHOOK, { method: 'POST', body: params, keepalive: true })
+          .catch(function () {
+            // Se o fetch falhar (rede caindo, aba fechando), tenta o beacon como rede de segurança.
+            try {
+              var fd = new FormData();
+              Object.keys(lead).forEach(function (k) { fd.append(k, lead[k]); });
+              navigator.sendBeacon && navigator.sendBeacon(LEAD_WEBHOOK, fd);
+            } catch (e) {}
+          });
+        // Não deixa o lead esperando se o hub demorar: segue para o WhatsApp em no máximo 2,5s.
+        return Promise.race([enviado, new Promise(function (r) { setTimeout(r, 2500); })]);
       }
 
       // Um mesmo comportamento para o formulário do hero e o do modal
