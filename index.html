@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phitofarma | Farmácia de Manipulação em São Bernardo do Campo - SP</title>
+  <meta name="description" content="Phitofarma, farmácia de manipulação em São Bernardo do Campo. Envie sua prescrição pelo WhatsApp e receba seu orçamento em minutos. Atendimento farmacêutico humanizado." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.suamanipulacao.com.br/phitofarma" />
+  <link rel="icon" href="assets/logo.webp" type="image/webp" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Phitofarma | Farmácia de Manipulação em São Bernardo do Campo" />
+  <meta property="og:description" content="Envie sua prescrição pelo WhatsApp e receba seu orçamento em minutos." />
+  <meta property="og:image" content="assets/logo.webp" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MN99C777');</script>
+  <!-- End Google Tag Manager -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Pharmacy",
+    "name": "Phitofarma São Bernardo - Farmácia de Manipulação",
+    "legalName": "F Fernandes Fórmulas Magistrais",
+    "taxID": "21.415.167/0001-93",
+    "telephone": "+55-11-3996-1937",
+    "url": "https://www.suamanipulacao.com.br/phitofarma",
+    "image": "assets/logo.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Índico, 499 - Jardim do Mar",
+      "addressLocality": "São Bernardo do Campo",
+      "addressRegion": "SP",
+      "postalCode": "09750-601",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }]
+  }
+  </script>
+
+  <style>
+    :root {
+      --brand: #a8170f;
+      --brand-dark: #7d0f0a;
+      --brand-soft: #fbeeed;
+      --brand-tint: #f6dedc;
+      --ink: #1f1a1a;
+      --ink-2: #4a4343;
+      --ink-3: #7a7272;
+      --line: #eadfdd;
+      --bg: #fdfaf9;
+      --card: #ffffff;
+      --wa: #25d366;
+      --wa-dark: #1ebe5b;
+      --radius: 18px;
+      --shadow: 0 10px 30px -12px rgba(120, 30, 20, .18);
+      --shadow-sm: 0 2px 10px -4px rgba(120, 30, 20, .15);
+      --sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+      --serif: "Fraunces", ui-serif, Georgia, serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: 0; }
+    .container { width: min(1140px, 100% - 32px); margin-inline: auto; }
+    .accent { font-family: var(--serif); font-style: italic; font-weight: 500; color: var(--brand); }
+    h1, h2, h3 { line-height: 1.12; letter-spacing: -0.02em; font-weight: 800; }
+    h2 { font-size: clamp(1.7rem, 3.2vw, 2.4rem); }
+    .lead { color: var(--ink-2); font-size: 1.05rem; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--brand); background: var(--brand-soft); border: 1px solid var(--brand-tint);
+      padding: 7px 14px; border-radius: 999px;
+    }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      padding: 15px 26px; border-radius: 999px; font-weight: 700; font-size: 1rem;
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: translateY(0); }
+    .btn-primary { background: var(--brand); color: #fff; box-shadow: 0 8px 20px -8px rgba(168, 23, 15, .6); }
+    .btn-primary:hover { background: var(--brand-dark); }
+    .btn-wa { background: var(--wa); color: #fff; box-shadow: 0 8px 20px -8px rgba(37, 211, 102, .6); }
+    .btn-wa:hover { background: var(--wa-dark); }
+    .btn-ghost { background: #fff; color: var(--brand); border: 1.5px solid var(--brand-tint); }
+    .btn-ghost:hover { border-color: var(--brand); }
+    .btn svg { width: 20px; height: 20px; flex: none; }
+    section { padding: 72px 0; }
+    .section-head { max-width: 680px; margin-bottom: 40px; }
+    .section-head h2 { margin: 12px 0 10px; }
+
+    /* ===== Topbar ===== */
+    .topbar {
+      background: var(--brand); color: #fff; font-size: .8rem; font-weight: 600;
+      text-align: center; padding: 9px 16px;
+    }
+
+    /* ===== Header ===== */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(253, 250, 249, .88); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    header.site .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 74px; }
+    .brand { display: flex; align-items: center; gap: 16px; }
+    .brand img { height: 46px; width: auto; }
+    .brand .pill {
+      display: inline-flex; align-items: center; gap: 8px; font-size: .78rem; font-weight: 600;
+      color: var(--ink-2); background: #fff; border: 1px solid var(--line); padding: 6px 12px; border-radius: 999px;
+    }
+    .brand .pill::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--wa); box-shadow: 0 0 0 4px rgba(37, 211, 102, .2); }
+    header .btn { padding: 11px 20px; font-size: .9rem; }
+    @media (max-width: 720px) { .brand .pill { display: none; } header .btn span.txt { display: none; } header .btn { padding: 11px 14px; } }
+
+    /* ===== Hero ===== */
+    .hero { padding: 64px 0 56px; overflow: hidden; position: relative; }
+    .hero::before {
+      content: ""; position: absolute; inset: 0; z-index: -1;
+      background:
+        radial-gradient(60% 50% at 85% 20%, rgba(168, 23, 15, .09), transparent 70%),
+        radial-gradient(40% 40% at 10% 90%, rgba(168, 23, 15, .06), transparent 70%);
+    }
+    .hero .grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }
+    .hero h1 { font-size: clamp(2.1rem, 4.4vw, 3.4rem); margin: 18px 0 16px; }
+    .hero h1 .accent { font-size: 1.05em; }
+    .hero .lead { margin-bottom: 26px; max-width: 520px; }
+    .lead-form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: #fff; padding: 12px; border-radius: 22px; border: 1px solid var(--line); box-shadow: var(--shadow); max-width: 560px; }
+    .lead-form input {
+      width: 100%; min-width: 0; border: 1.5px solid var(--line); border-radius: 999px; outline: 0; font: inherit; font-size: 1rem; padding: 13px 18px; background: var(--bg); color: var(--ink);
+      transition: border-color .15s;
+    }
+    .lead-form input:focus { border-color: var(--brand); background: #fff; }
+    .lead-form input.invalid { border-color: var(--brand); }
+    .lead-form input::placeholder { color: var(--ink-3); }
+    .lead-form .btn { grid-column: 1 / -1; width: 100%; padding: 14px 22px; }
+    .lead-form .btn.loading { opacity: .7; pointer-events: none; }
+    .form-note { font-size: .8rem; color: var(--ink-3); margin-top: 12px; }
+    .form-err { display: none; font-size: .82rem; color: var(--brand); margin-top: 8px; font-weight: 600; }
+    .trust-line { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 20px; font-size: .85rem; color: var(--ink-2); }
+    .trust-line span { display: inline-flex; align-items: center; gap: 6px; }
+    .trust-line svg { width: 16px; height: 16px; color: var(--brand); }
+    .stars { display: flex; align-items: center; gap: 10px; margin-top: 22px; font-size: .9rem; font-weight: 600; }
+    .stars .s { color: #f5b301; letter-spacing: 2px; font-size: 1.05rem; }
+    .hero-visual { position: relative; }
+    .hero-visual .frame {
+      border-radius: 28px; overflow: hidden; background: linear-gradient(160deg, var(--brand-soft), #fff 60%);
+      border: 1px solid var(--line); box-shadow: var(--shadow); aspect-ratio: 4 / 4.6; display: flex; align-items: flex-end; justify-content: center;
+    }
+    .hero-visual .frame img { height: 100%; width: auto; object-fit: contain; object-position: bottom; }
+    .hero-visual .float {
+      position: absolute; left: -18px; bottom: 36px; background: #fff; border: 1px solid var(--line);
+      border-radius: 16px; padding: 14px 18px; box-shadow: var(--shadow);
+    }
+    .hero-visual .float small { display: block; font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+    .hero-visual .float strong { font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 1.3rem; color: var(--brand); }
+    @media (max-width: 900px) {
+      .hero .grid { grid-template-columns: 1fr; }
+      .hero-visual { max-width: 420px; margin-inline: auto; }
+      .hero-visual .float { left: 8px; }
+      .lead-form { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Benefits strip ===== */
+    .benefits { padding: 0 0 64px; }
+    .benefits .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .b-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow-sm); }
+    .b-card .ic { width: 42px; height: 42px; border-radius: 12px; background: var(--brand-soft); color: var(--brand); display: grid; place-items: center; margin-bottom: 14px; }
+    .b-card .ic svg { width: 22px; height: 22px; }
+    .b-card h3 { font-size: 1rem; margin-bottom: 4px; }
+    .b-card p { font-size: .88rem; color: var(--ink-2); }
+    @media (max-width: 900px) { .benefits .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { .benefits .grid { grid-template-columns: 1fr; } }
+
+    /* ===== Steps ===== */
+    .steps { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .steps .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 32px; }
+    .step { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; position: relative; }
+    .step .num { width: 36px; height: 36px; border-radius: 50%; background: var(--brand); color: #fff; font-weight: 800; display: grid; place-items: center; margin-bottom: 18px; }
+    .step h3 { font-size: 1.05rem; margin-bottom: 8px; }
+    .step p { font-size: .92rem; color: var(--ink-2); }
+    @media (max-width: 820px) { .steps .grid { grid-template-columns: 1fr; } }
+
+    /* ===== Differentials ===== */
+    .diff .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .diff .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .d-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+    .d-card .chk { width: 30px; height: 30px; border-radius: 50%; background: var(--brand-soft); color: var(--brand); display: grid; place-items: center; margin-bottom: 12px; }
+    .d-card .chk svg { width: 16px; height: 16px; }
+    .d-card h3 { font-size: .98rem; margin-bottom: 6px; }
+    .d-card p { font-size: .86rem; color: var(--ink-2); }
+    .diff .visual { border-radius: 28px; padding: 32px; background: linear-gradient(150deg, var(--brand) 0%, var(--brand-dark) 100%); color: #fff; min-height: 380px; display: flex; flex-direction: column; justify-content: flex-end; position: relative; overflow: hidden; }
+    .diff .visual > * { position: relative; z-index: 1; }
+    .diff .visual::after { content: ""; position: absolute; width: 320px; height: 320px; border-radius: 50%; background: rgba(255,255,255,.08); top: -120px; right: -100px; }
+    .diff .visual .big { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: clamp(1.75rem, 3.6vw, 2.8rem); line-height: 1.15; margin-bottom: 14px; margin-top: auto; }
+    .diff .visual p { color: rgba(255,255,255,.85); max-width: 380px; }
+    .diff .visual .tag { align-self: flex-start; margin-bottom: 28px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 6px 14px; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    @media (max-width: 900px) { .diff .grid { grid-template-columns: 1fr; } .diff .visual { min-height: 0; padding: 28px 24px; } }
+    @media (max-width: 520px) { .diff .cards { grid-template-columns: 1fr; } }
+
+    /* ===== Services ===== */
+    .services { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .services .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .s-card { border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; background: var(--bg); transition: transform .15s ease, box-shadow .15s ease; }
+    .s-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+    .s-card .ic { width: 44px; height: 44px; border-radius: 12px; background: #fff; border: 1px solid var(--line); color: var(--brand); display: grid; place-items: center; margin-bottom: 14px; }
+    .s-card .ic svg { width: 22px; height: 22px; }
+    .s-card h3 { font-size: .98rem; margin-bottom: 6px; }
+    .s-card p { font-size: .85rem; color: var(--ink-2); }
+    @media (max-width: 1000px) { .services .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { .services .grid { grid-template-columns: 1fr; } }
+
+    /* ===== Testimonials ===== */
+    .reviews .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .r-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+    .r-card .s { color: #f5b301; letter-spacing: 2px; }
+    .r-card blockquote { font-size: .95rem; color: var(--ink-2); flex: 1; }
+    .r-card .who { display: flex; align-items: center; gap: 10px; }
+    .r-card .av { width: 38px; height: 38px; border-radius: 50%; background: var(--brand-soft); color: var(--brand); font-weight: 800; display: grid; place-items: center; font-size: .85rem; }
+    .r-card .who strong { display: block; font-size: .9rem; }
+    .r-card .who small { color: var(--ink-3); font-size: .78rem; }
+    @media (max-width: 1000px) { .reviews .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .reviews .grid { grid-template-columns: 1fr; } }
+
+    /* ===== CTA band ===== */
+    .cta-band { background: linear-gradient(120deg, var(--brand) 0%, var(--brand-dark) 100%); color: #fff; padding: 56px 0; }
+    .cta-band .row { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .cta-band h2 { color: #fff; margin-bottom: 8px; }
+    .cta-band p { color: rgba(255,255,255,.85); max-width: 520px; }
+    .cta-band .btn-wa { flex: none; }
+    @media (max-width: 820px) { .cta-band .row { flex-direction: column; align-items: flex-start; } }
+
+    /* ===== FAQ ===== */
+    .faq .list { max-width: 820px; margin-inline: auto; display: grid; gap: 10px; }
+    .faq details { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0 22px; }
+    .faq summary { list-style: none; cursor: pointer; font-weight: 700; padding: 18px 0; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: ""; width: 10px; height: 10px; border-right: 2px solid var(--brand); border-bottom: 2px solid var(--brand); transform: rotate(45deg); transition: transform .2s; flex: none; margin-right: 4px; }
+    .faq details[open] summary::after { transform: rotate(-135deg); }
+    .faq details p { color: var(--ink-2); padding-bottom: 18px; font-size: .95rem; }
+    .faq .section-head { text-align: center; margin-inline: auto; }
+
+    /* ===== Location ===== */
+    .location { background: #fff; border-top: 1px solid var(--line); }
+    .location .grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 32px; align-items: stretch; }
+    .location .info { background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; display: flex; flex-direction: column; gap: 20px; }
+    .location .info h2 { font-size: 1.6rem; }
+    .location .item { display: flex; gap: 14px; }
+    .location .item svg { width: 22px; height: 22px; color: var(--brand); flex: none; margin-top: 2px; }
+    .location .item strong { display: block; font-size: .95rem; }
+    .location .item span { color: var(--ink-2); font-size: .92rem; }
+    .location iframe { width: 100%; height: 100%; min-height: 380px; border: 0; border-radius: var(--radius); }
+    @media (max-width: 860px) { .location .grid { grid-template-columns: 1fr; } }
+
+    /* ===== Footer ===== */
+    footer.site { background: #fbf4f3; border-top: 1px solid var(--line); padding: 56px 0 28px; font-size: .88rem; }
+    footer .cols { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 32px; margin-bottom: 36px; }
+    footer h4 { font-size: .95rem; margin-bottom: 12px; }
+    footer p, footer li { color: var(--ink-2); }
+    footer ul { list-style: none; display: grid; gap: 6px; }
+    footer ul a { text-decoration: underline; text-underline-offset: 3px; }
+    footer .legal { border-top: 1px solid var(--line); padding-top: 22px; color: var(--ink-3); font-size: .8rem; display: grid; gap: 8px; }
+    footer .brand img { height: 44px; margin-bottom: 14px; }
+    @media (max-width: 820px) { footer .cols { grid-template-columns: 1fr; } }
+
+    /* ===== Floating WhatsApp ===== */
+    .wa-float {
+      position: fixed; right: 18px; bottom: 18px; z-index: 60;
+      width: 60px; height: 60px; border-radius: 50%; background: var(--wa); color: #fff;
+      display: grid; place-items: center; box-shadow: 0 12px 28px -8px rgba(37, 211, 102, .7);
+      animation: pulse 2.4s infinite;
+    }
+    .wa-float svg { width: 32px; height: 32px; }
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(37,211,102,.45), 0 12px 28px -8px rgba(37,211,102,.7);} 70% { box-shadow: 0 0 0 16px rgba(37,211,102,0), 0 12px 28px -8px rgba(37,211,102,.7);} 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0), 0 12px 28px -8px rgba(37,211,102,.7);} }
+
+    /* ===== Modal ===== */
+    .modal-bg { position: fixed; inset: 0; background: rgba(20, 8, 6, .62); backdrop-filter: blur(4px); z-index: 100; display: none; align-items: center; justify-content: center; padding: 20px; }
+    .modal-bg.open { display: flex; }
+    .modal { background: #fff; border-radius: 22px; width: min(440px, 100%); overflow: hidden; box-shadow: 0 30px 60px -20px rgba(0,0,0,.5); animation: pop .25s ease; }
+    @keyframes pop { from { transform: translateY(14px) scale(.97); opacity: 0; } to { transform: none; opacity: 1; } }
+    .modal .head { background: linear-gradient(120deg, var(--brand), var(--brand-dark)); color: #fff; padding: 20px 24px; display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.1rem; }
+    .modal .head svg { width: 22px; height: 22px; }
+    .modal .body { padding: 24px; }
+    .modal .body p { color: var(--ink-2); font-size: .95rem; margin-bottom: 20px; }
+    .modal .body ul { list-style: none; display: grid; gap: 8px; margin-bottom: 22px; }
+    .modal .body li { display: flex; align-items: center; gap: 10px; font-size: .92rem; font-weight: 600; }
+    .modal .body li::before { content: "✕"; color: var(--brand); font-weight: 800; }
+    .modal .btn { width: 100%; }
+
+    /* ===== Cookie banner ===== */
+    .cookie { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 70; background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; box-shadow: var(--shadow); display: none; align-items: center; justify-content: space-between; gap: 16px; font-size: .85rem; color: var(--ink-2); max-width: 760px; margin-inline: auto; }
+    .cookie.show { display: flex; }
+    .cookie .btn { padding: 10px 18px; font-size: .85rem; }
+    @media (max-width: 640px) { .cookie { flex-direction: row; align-items: center; text-align: left; bottom: 12px; left: 12px; right: 84px; padding: 10px 12px; font-size: .74rem; border-radius: 12px; } .cookie .btn { padding: 8px 12px; font-size: .74rem; } }
+
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .35s ease, transform .35s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } .wa-float { animation: none; } }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN99C777"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- ===== POPUP DE AVISO ===== -->
+  <div class="modal-bg open" id="aviso" role="dialog" aria-modal="true" aria-labelledby="aviso-title">
+    <div class="modal">
+      <div class="head">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <span id="aviso-title">Atenção</span>
+      </div>
+      <div class="body">
+        <p>Nosso atendimento é focado em <strong>fórmulas manipuladas</strong> mediante prescrição de um profissional de saúde habilitado. Não atendemos:</p>
+        <ul>
+          <li>Injetáveis</li>
+          <li>Colírios</li>
+          <li>Homeopatia</li>
+          <li>Antibióticos</li>
+        </ul>
+        <button class="btn btn-primary" id="aviso-ok">Ok, entendi!</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="topbar">Não trabalhamos com injetáveis, colírios, homeopatia e antibióticos.</div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site">
+    <div class="container">
+      <div class="brand">
+        <a href="#top"><img src="assets/logo.webp" alt="Phitofarma - Farmácia de Manipulação" width="250" height="87" /></a>
+        <span class="pill">Atendimento rápido via WhatsApp</span>
+      </div>
+      <a class="btn btn-primary js-wa" href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        <span class="txt">Pedir orçamento agora</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="container grid">
+      <div>
+        <span class="eyebrow">Orçamento rápido e sem complicação</span>
+        <h1>Sua fórmula manipulada com <span class="accent">orçamento em minutos</span> pelo WhatsApp</h1>
+        <p class="lead">Phitofarma, farmácia de manipulação em São Bernardo do Campo. Envie sua prescrição e nossa equipe farmacêutica responde com valores e prazo direto no seu WhatsApp.</p>
+
+        <form class="lead-form" id="lead-form" novalidate>
+          <input type="text" id="nome" name="nome" autocomplete="given-name" placeholder="Seu nome" aria-label="Seu nome" maxlength="80" />
+          <input type="tel" id="phone" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="Seu WhatsApp com DDD" aria-label="Seu WhatsApp com DDD" />
+          <button type="submit" class="btn btn-wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+            Quero meu orçamento
+          </button>
+        </form>
+        <p class="form-err" id="form-err">Preencha seu nome e um WhatsApp válido com DDD (ex.: 11 99999-9999).</p>
+        <p class="form-note">Ao enviar, você será direcionado ao WhatsApp da Phitofarma. Sem compromisso. Seus dados são tratados conforme nossa <a href="privacidade.html" style="text-decoration:underline">Política de Privacidade</a>.</p>
+
+        <div class="trust-line">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Atendimento humanizado</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Resposta rápida no horário comercial</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Farmacêutica responsável</span>
+        </div>
+
+        <div class="stars"><span class="s">★★★★★</span> Clientes satisfeitos avaliam com nota 10</div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="frame">
+          <img src="assets/hero-mulher.png" alt="Cliente satisfeita segurando sacola da Phitofarma" width="507" height="770" fetchpriority="high" />
+        </div>
+        <div class="float">
+          <small>Orçamento</small>
+          <strong>em poucos minutos</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BENEFITS ===== -->
+  <section class="benefits">
+    <div class="container grid">
+      <div class="b-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <h3>Cotação express</h3>
+        <p>Atendimento ágil pelo WhatsApp, sem filas e sem espera.</p>
+      </div>
+      <div class="b-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Rigor e precisão</h3>
+        <p>Matérias-primas com laudo e controle de qualidade em cada etapa.</p>
+      </div>
+      <div class="b-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <h3>Entrega na sua casa</h3>
+        <p>Retire na loja ou receba com todo cuidado de embalagem.</p>
+      </div>
+      <div class="b-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Suporte especializado</h3>
+        <p>Farmacêuticos prontos para tirar suas dúvidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STEPS ===== -->
+  <section class="steps" id="como-funciona">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Como pedir seu orçamento em <span class="accent">3 passos simples</span></h2>
+      </div>
+      <div class="grid">
+        <div class="step reveal">
+          <div class="num">1</div>
+          <h3>Envie sua prescrição</h3>
+          <p>Tire uma foto nítida da sua prescrição ou envie o arquivo em PDF pelo WhatsApp.</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">2</div>
+          <h3>Receba o orçamento</h3>
+          <p>Nossa equipe técnica avalia sua solicitação e envia valores e prazos no WhatsApp.</p>
+        </div>
+        <div class="step reveal">
+          <div class="num">3</div>
+          <h3>Retire ou receba em casa</h3>
+          <p>Com tudo aprovado, preparamos sua fórmula com precisão e entregamos no endereço combinado.</p>
+        </div>
+      </div>
+      <a class="btn btn-wa js-wa" href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Enviar prescrição agora
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== DIFFERENTIALS ===== -->
+  <section class="diff" id="diferenciais">
+    <div class="container grid">
+      <div class="visual reveal">
+        <span class="tag">Phitofarma São Bernardo</span>
+        <div class="big">Cuidado individualizado e padrão de excelência em cada detalhe.</div>
+        <p>Cada fórmula nasce após análise e orientação profissional. Aqui nada é genérico.</p>
+      </div>
+      <div class="cards">
+        <div class="d-card reveal">
+          <div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <h3>Matérias-primas selecionadas</h3>
+          <p>Fornecedores qualificados e laudos analíticos para garantir a integridade de cada fórmula.</p>
+        </div>
+        <div class="d-card reveal">
+          <div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <h3>Dosagem e formato sob medida</h3>
+          <p>Cápsulas, sachês, cremes ou gotas, na dosagem estipulada pelo seu profissional de saúde.</p>
+        </div>
+        <div class="d-card reveal">
+          <div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <h3>Atendimento consultivo</h3>
+          <p>Não é só um orçamento. Nossa equipe tira dúvidas sobre horários de uso e conservação.</p>
+        </div>
+        <div class="d-card reveal">
+          <div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <h3>Fórmulas humanas e veterinárias</h3>
+          <p>Manipulação personalizada para você e para o seu pet, sempre com prescrição.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="formulas">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Nossas fórmulas</span>
+        <h2>Manipulação personalizada para <span class="accent">a sua rotina</span></h2>
+        <p class="lead">Todas as fórmulas são preparadas mediante prescrição de um profissional de saúde habilitado.</p>
+      </div>
+      <div class="grid">
+        <div class="s-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div><h3>Fórmulas para pele</h3><p>Dermocosméticos personalizados para cuidados diários e manutenção.</p></div>
+        <div class="s-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 5 3 6l4 7 4-7c1-1 3-3 3-6a7 7 0 0 0-7-7z"/></svg></div><h3>Fórmulas para cabelo</h3><p>Soluções manipuladas para cuidado capilar contínuo.</p></div>
+        <div class="s-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div><h3>Fórmulas para foco e rotina</h3><p>Apoio à concentração, clareza e produtividade no dia a dia.</p></div>
+        <div class="s-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v6a6 6 0 0 0 12 0V4"/><line x1="4" y1="4" x2="8" y2="4"/><line x1="16" y1="4" x2="20" y2="4"/><line x1="12" y1="16" x2="12" y2="21"/><line x1="8" y1="21" x2="16" y2="21"/></svg></div><h3>Energia e exercício</h3><p>Apoio nutricional para quem treina e exige mais do corpo.</p></div>
+        <div class="s-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></div><h3>Sono e recuperação</h3><p>Apoio para descanso, relaxamento e recuperação do corpo.</p></div>
+        <div class="s-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div><h3>Imunidade</h3><p>Suporte ao sistema imunológico ajustado ao seu estilo de vida.</p></div>
+        <div class="s-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div><h3>Bem-estar diário</h3><p>Manipulados pensados para equilíbrio e qualidade de vida.</p></div>
+        <div class="s-card reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.5L3.5 20a1 1 0 0 0 .9 1.5h15.2a1 1 0 0 0 .9-1.5L14 9.5V2"/><line x1="8" y1="2" x2="16" y2="2"/></svg></div><h3>Fórmulas personalizadas</h3><p>Cada fórmula nasce após análise e orientação profissional.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="reviews" id="avaliacoes">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Clientes satisfeitos</span>
+        <h2>A escolha de quem busca <span class="accent">confiança e agilidade</span></h2>
+        <p class="lead">Veja o que nossos clientes dizem sobre o atendimento da Phitofarma:</p>
+      </div>
+      <div class="grid">
+        <div class="r-card reveal"><div class="s">★★★★★</div><blockquote>“Excelente experiência! A equipe é muito atenciosa, o atendimento é rápido e cuidadoso.”</blockquote><div class="who"><div class="av">JG</div><div><strong>Juliana Guimarães</strong><small>Cliente</small></div></div></div>
+        <div class="r-card reveal"><div class="s">★★★★★</div><blockquote>“Experiência ótima! Já sou cliente há alguns anos.”</blockquote><div class="who"><div class="av">AS</div><div><strong>Alessandra Silva</strong><small>Cliente</small></div></div></div>
+        <div class="r-card reveal"><div class="s">★★★★★</div><blockquote>“Primeira vez que uso os serviços da farmácia e fui muito bem atendida. Até o momento tudo ótimo.”</blockquote><div class="who"><div class="av">MP</div><div><strong>Marluz Pereira</strong><small>Cliente</small></div></div></div>
+        <div class="r-card reveal"><div class="s">★★★★★</div><blockquote>“Sou cliente há bastante tempo e sempre faço meus manipulados com eles.”</blockquote><div class="who"><div class="av">SS</div><div><strong>Sueli Santiago</strong><small>Cliente</small></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band">
+    <div class="container row">
+      <div>
+        <h2>Já tem sua prescrição em mãos?</h2>
+        <p>Não perca tempo em filas. Envie agora para nossa central e receba seu orçamento personalizado.</p>
+      </div>
+      <a class="btn btn-wa js-wa" href="#">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Fazer cotação via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="duvidas">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Dúvidas frequentes</span>
+        <h2>Perguntas que <span class="accent">recebemos sempre</span></h2>
+      </div>
+      <div class="list">
+        <details><summary>Em quanto tempo recebo meu orçamento?</summary><p>Durante o horário comercial, nossa equipe responde em poucos minutos após receber a prescrição. Fora do horário, respondemos assim que abrirmos.</p></details>
+        <details><summary>Como posso enviar a prescrição?</summary><p>Basta tirar uma foto nítida ou enviar o PDF pelo WhatsApp. Clique em qualquer botão desta página e você já cai direto na conversa.</p></details>
+        <details><summary>Preciso de prescrição para manipular?</summary><p>Sim. Medicamentos manipulados são preparados exclusivamente mediante prescrição de um profissional de saúde habilitado, conforme a legislação sanitária.</p></details>
+        <details><summary>Vocês entregam na minha região?</summary><p>Atendemos São Bernardo do Campo e região do ABC. Consulte prazos e condições de entrega para o seu endereço pelo WhatsApp.</p></details>
+        <details><summary>Quais são as formas de pagamento aceitas?</summary><p>Aceitamos Pix, cartão de crédito, cartão de débito e dinheiro. Confirme as condições com nossa equipe no atendimento.</p></details>
+        <details><summary>O que vocês não manipulam?</summary><p>Não trabalhamos com injetáveis, colírios, homeopatia e antibióticos.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOCATION ===== -->
+  <section class="location" id="localizacao">
+    <div class="container grid">
+      <div class="info reveal">
+        <h2>Nossa <span class="accent">localização</span></h2>
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><strong>Endereço</strong><span>Av. Índico, 499 - Jardim do Mar<br/>São Bernardo do Campo - SP, 09750-601</span></div>
+        </div>
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          <div><strong>Telefone</strong><span><a href="tel:+551139961937">(11) 3996-1937</a><br/><a href="#" class="js-wa">WhatsApp: (11) 96335-0979</a></span></div>
+        </div>
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div><strong>Horário de atendimento</strong><span>Segunda a sexta, das 8h às 18h</span></div>
+        </div>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Av.+%C3%8Dndico,+499+-+Jardim+do+Mar,+S%C3%A3o+Bernardo+do+Campo+-+SP" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+      <iframe title="Mapa da Phitofarma em São Bernardo do Campo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Av.+%C3%8Dndico,+499+-+Jardim+do+Mar,+S%C3%A3o+Bernardo+do+Campo+-+SP,+09750-601&z=16&output=embed"></iframe>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site">
+    <div class="container">
+      <div class="cols">
+        <div class="brand" style="display:block">
+          <img src="assets/logo.webp" alt="Phitofarma" width="250" height="87" />
+          <p>Av. Índico, 499 - Jardim do Mar<br/>São Bernardo do Campo - SP, 09750-601</p>
+          <p style="margin-top:8px"><a href="tel:+551139961937">(11) 3996-1937</a></p>
+        </div>
+        <div>
+          <h4>Dados da empresa</h4>
+          <ul>
+            <li>F Fernandes Fórmulas Magistrais</li>
+            <li>Nome fantasia: Phitofarma São Bernardo</li>
+            <li>CNPJ: 21.415.167/0001-93</li>
+            <li>Responsável Técnica: Dra. Fernanda Fernandes Santos - CRF-SP 86215</li>
+            <li>Autorizações Anvisa: AFE 7.38020.0 · AE 1.14.103-8</li>
+            <li>Certidão de Regularidade Técnica CRF-SP: 69085</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Informações</h4>
+          <ul>
+            <li><a href="privacidade.html">Política de Privacidade</a></li>
+            <li><a href="termos.html">Termos de Uso</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#duvidas">Dúvidas frequentes</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal">
+        <p>© <span id="ano"></span> F Fernandes Fórmulas Magistrais. Todos os direitos reservados.</p>
+        <p>Este site tem caráter informativo e não substitui a orientação de um profissional de saúde. Medicamentos manipulados são preparados exclusivamente mediante prescrição de um profissional de saúde habilitado. Não trabalhamos com injetáveis, colírios, homeopatia e antibióticos.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float js-wa" href="#" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+  </a>
+
+  <!-- Cookie banner -->
+  <div class="cookie" id="cookie">
+    <span>Usamos cookies para melhorar sua experiência. Veja a <a href="privacidade.html" style="text-decoration:underline">Política de Privacidade</a>.</span>
+    <button class="btn btn-primary" id="cookie-ok">Ok, entendi</button>
+  </div>
+
+  <script>
+    (function () {
+      // ===== CONFIG =====
+      var WA_NUMBER = '5511963350979';
+      var WA_MSG = 'Olá! Vim pelo site e quero um orçamento da minha fórmula manipulada.';
+      // URL que recebe o lead (webhook n8n, Make, Google Apps Script, etc.). Deixe vazio para só redirecionar ao WhatsApp.
+      var LEAD_WEBHOOK = 'https://hub.alveogroup.com.br/api/public/webhook/06de5be707c1f3e3266280b67a447a95';
+
+      function waUrl(extra) {
+        var msg = WA_MSG + (extra ? ' ' + extra : '');
+        return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+      }
+      function track(name) {
+        if (window.dataLayer) window.dataLayer.push({ event: name });
+        if (typeof gtag === 'function') gtag('event', name);
+      }
+
+      // Todos os botões de WhatsApp
+      document.querySelectorAll('.js-wa').forEach(function (el) {
+        el.setAttribute('href', waUrl());
+        el.setAttribute('target', '_blank');
+        el.setAttribute('rel', 'noopener');
+        el.addEventListener('click', function () { track('whatsapp_click'); });
+      });
+
+      // Formulário do hero
+      var form = document.getElementById('lead-form');
+      var nome = document.getElementById('nome');
+      var phone = document.getElementById('phone');
+      var err = document.getElementById('form-err');
+      var submitBtn = form.querySelector('button[type=submit]');
+      function clearErr() { err.style.display = 'none'; nome.classList.remove('invalid'); phone.classList.remove('invalid'); }
+      nome.addEventListener('input', clearErr);
+      phone.addEventListener('input', function () {
+        var v = phone.value.replace(/\D/g, '').slice(0, 11);
+        if (v.length > 6) v = '(' + v.slice(0, 2) + ') ' + v.slice(2, 7) + '-' + v.slice(7);
+        else if (v.length > 2) v = '(' + v.slice(0, 2) + ') ' + v.slice(2);
+        phone.value = v;
+        clearErr();
+      });
+      function saveLead(lead) {
+        try { localStorage.setItem('phito_lead', JSON.stringify(lead)); } catch (e) {}
+        if (!LEAD_WEBHOOK) return Promise.resolve();
+        var body = JSON.stringify(lead);
+        if (navigator.sendBeacon) {
+          try { navigator.sendBeacon(LEAD_WEBHOOK, new Blob([body], { type: 'application/json' })); return Promise.resolve(); } catch (e) {}
+        }
+        return fetch(LEAD_WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body, keepalive: true, mode: 'no-cors' }).catch(function () {});
+      }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var n = nome.value.trim();
+        var digits = phone.value.replace(/\D/g, '');
+        var ok = true;
+        if (n.length < 2) { nome.classList.add('invalid'); ok = false; }
+        if (digits.length < 10) { phone.classList.add('invalid'); ok = false; }
+        if (!ok) { err.style.display = 'block'; (n.length < 2 ? nome : phone).focus(); return; }
+
+        var params = new URLSearchParams(location.search);
+        var lead = {
+          nome: n,
+          whatsapp: '55' + digits,
+          telefone_formatado: phone.value,
+          origem: 'lp-phitofarma',
+          pagina: location.href,
+          utm_source: params.get('utm_source') || '',
+          utm_medium: params.get('utm_medium') || '',
+          utm_campaign: params.get('utm_campaign') || '',
+          utm_term: params.get('utm_term') || '',
+          utm_content: params.get('utm_content') || '',
+          gclid: params.get('gclid') || '',
+          data: new Date().toISOString()
+        };
+        submitBtn.classList.add('loading');
+        track('lead_form_submit');
+        var primeiro = n.split(' ')[0];
+        var msg = 'Olá! Meu nome é ' + n + ' e vim pelo site. Quero um orçamento da minha fórmula manipulada. Meu WhatsApp: ' + phone.value;
+        var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+        saveLead(lead).then(function () {
+          submitBtn.classList.remove('loading');
+          window.location.href = url;
+        });
+      });
+
+      // Popup de aviso
+      var aviso = document.getElementById('aviso');
+      document.getElementById('aviso-ok').addEventListener('click', function () {
+        aviso.classList.remove('open');
+        try { sessionStorage.setItem('aviso_ok', '1'); } catch (e) {}
+      });
+      try { if (sessionStorage.getItem('aviso_ok')) aviso.classList.remove('open'); } catch (e) {}
+
+      // Cookie banner
+      var cookie = document.getElementById('cookie');
+      try { if (!localStorage.getItem('cookie_ok')) cookie.classList.add('show'); } catch (e) { cookie.classList.add('show'); }
+      document.getElementById('cookie-ok').addEventListener('click', function () {
+        cookie.classList.remove('show');
+        try { localStorage.setItem('cookie_ok', '1'); } catch (e) {}
+      });
+
+      // Ano
+      document.getElementById('ano').textContent = new Date().getFullYear();
+
+      // Reveal on scroll
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+        }, { threshold: .05, rootMargin: '0px 0px 80px 0px' });
+        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+      } else {
+        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+      }
+    })();
+  </script>
+</body>
+</html>
